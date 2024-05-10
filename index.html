@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="css/HomePage.css">
+    <link rel="stylesheet" href="css/Cards.css">
+    <link rel="stylesheet" href="css/Normalize.css">
+    <link rel="stylesheet" href="css/Header.css">
+
+    <link rel="icon" type="image/x-icon" href="/components/svg/code.svg">
+
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+    <title>CodeBlog</title>
+  </head>
+
+  <body>
+    <div class='header'>
+        <div class='title'>
+            <img src="components/svg/code.svg" class='code-image'></img>
+            <a class='label' href="/">CodeBlog</a>
+        </div>
+            
+        <button class='mobile-nav-button' onclick="toggleMobileHeader()">
+            <img src="components/svg/menu.svg" class='menu-image'></img>
+        </button>
+
+        <ul class='nav'>
+            <li><a href="/">Домашня сторінка</a></li>
+            <li><a href="/">Про сайт</a></li>
+            <li><a href="login.html">Вхід</a></li>
+            <li><a href="register.html">Реєстрація</a></li>
+            <li><a href="profile.html">Профіль</a></li>
+        </ul>
+
+        <ul id='mobile-nav' class='mobile-nav-closed'>
+            <li><a href="index.html">Домашня сторінка</a></li>
+            <li><a href="index.html">Про сайт</a></li>
+            <li><a href="login.html">Вхід</a></li>
+            <li><a href="register.html">Реєстрація</a></li>
+            <li><a href="profile.html">Профіль</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+      <h1 id="h1-welcome-title">Дізнайся більше у сфері IT</h1>
+      <div class="welcome-screen">
+        <title class="welcome-title">Домашня сторінка</title>
+        <div class="about-site">
+          <h1 id="about-side-title">Про сайт</h1>
+          <br>
+          <h5>
+            Вітаю<br>
+            Хочу коротко розповісти навіщо потрібен цей сайт і кому він підійде
+            На сайті є вся необхідна інформація щодо мов програмування та текстових редакторів, багато інформації про все це<br> 
+            Він підійде для будь-кого, хто хоч якось зацікавлений у сфері IT, у першу чергу допоможе новачкам, але і справжні сеньйори також можуть знайти щось цікаве
+          </h5>
+        </div>
+      </div>
+
+      <div class="cards-container">
+        <div class="card" id="card-1">
+          <h1>Текстові редактори</h1>
+          <div class="card-img">
+            <img src="components/svg/cards/ide.svg">
+          </div>
+          <button onclick="location.href='pages/ide.html'">Детальніше</button>
+        </div>
+
+        <div class="card" id="card-2">
+          <h1>Розробка ігор</h1>
+          <div class="card-img">
+            <img src="components/svg/cards/joystick.svg">
+          </div>
+          <button onclick="location.href='pages/gamedev.html'">Детальніше</button>
+        </div>
+
+        <div class="card" id="card-3">
+          <h1>Розробка ПЗ</h1>
+          <div class="card-img">
+            <img src="components/svg/cards/devices.svg">
+          </div>
+          <button onclick="location.href='pages/pz.html'">Детальніше</button>
+        </div>
+
+        <div class="card" id="card-4">
+          <h1>Розробка сайтів</h1>
+          <div class="card-img">
+            <img src="components/svg/cards/sitemap.svg">
+          </div>
+          <button onclick="location.href='pages/sites.html'">Детальніше</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="components/scripts/Header.js"></script>
+  </body>
+</html>

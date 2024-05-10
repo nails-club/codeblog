@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../../css/Header.css">
+    <link rel="stylesheet" href="../../css/general-style.css">
+
+    <link rel="icon" type="image/x-icon" href="../../components/svg/pages/svelte.svg">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeBlog - Svelte</title>
+</head>
+<body>
+    <div class='header'>
+        <div class='title'>
+            <img src="../../components/svg/code.svg" class='code-image'></img>
+            <a class='label' href="/">CodeBlog</a>
+        </div>
+            
+        <button class='mobile-nav-button' onclick="toggleMobileHeader()">
+            <img src="../../components/svg/menu.svg" class='menu-image'></img>
+        </button>
+
+        <ul class='nav'>
+            <li><a href="/index.html">Домашня сторінка</a></li>
+            <li><a href="/index.html">Про сайт</a></li>
+            <li><a href="/login.html">Вхід</a></li>
+            <li><a href="/register.html">Реєстрація</a></li>
+            <li><a href="/profile.html">Профіль</a></li>
+            <li><a href="../sites.html">Розробка сайтів</a></li>
+        </ul>
+
+        <ul id='mobile-nav' class='mobile-nav-closed'>
+            <li><a href="/index.html">Домашня сторінка</a></li>
+            <li><a href="/index.html">Про сайт</a></li>
+            <li><a href="/login.html">Вхід</a></li>
+            <li><a href="/register.html">Реєстрація</a></li>
+            <li><a href="/profile.html">Профіль</a></li>
+            <li><a href="../sites.html">Розробка сайтів</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1 id="main-title">Svelte</h1>
+        <a id="learn-more" href="https://svelte.dev/">Офіційний Сайт</a>
+        <p id="description">
+            Svelte.js(читається як "свелт") — це так званий зникаючий JavaScript-фреймворк. Являє собою компілятор, котрий бере ваші декларативні компоненти та перетворює їх в чистий JavaScript, який точково оновлює DOM. Svelte.js на відміну від Vue.js, Angular.js, React.js не будує абстракції поверх JavaScript а компілює компоненти Svelte в нативний JavaScript, також не використовується Virtual DOM. Компоненти в Svelte.js - це однофайлові компоненти(дуже подібні на компоненти в Vue.js).
+        </p>
+    </div>
+
+    <script src="../../components/scripts/Header.js"></script>
+</body>
+</html>

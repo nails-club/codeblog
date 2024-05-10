@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../../css/Header.css">
+    <link rel="stylesheet" href="../../css/general-style.css">
+
+    <link rel="icon" type="image/x-icon" href="../../components/svg/pages/intellij-idea.svg">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeBlog - IntelliJ</title>
+</head>
+<body>
+    <div class='header'>
+        <div class='title'>
+            <img src="../../components/svg/code.svg" class='code-image'></img>
+            <a class='label' href="/">CodeBlog</a>
+        </div>
+            
+        <button class='mobile-nav-button' onclick="toggleMobileHeader()">
+            <img src="../../components/svg/menu.svg" class='menu-image'></img>
+        </button>
+
+        <ul class='nav'>
+            <li><a href="/index.html">Домашня сторінка</a></li>
+            <li><a href="/index.html">Про сайт</a></li>
+            <li><a href="/login.html">Вхід</a></li>
+            <li><a href="/register.html">Реєстрація</a></li>
+            <li><a href="/profile.html">Профіль</a></li>
+            <li><a href="../ide.html">Текстові Редактори</a></li>
+        </ul>
+
+        <ul id='mobile-nav' class='mobile-nav-closed'>
+            <li><a href="/index.html">Домашня сторінка</a></li>
+            <li><a href="/index.html">Про сайт</a></li>
+            <li><a href="/login.html">Вхід</a></li>
+            <li><a href="/register.html">Реєстрація</a></li>
+            <li><a href="/profile.html">Профіль</a></li>
+            <li><a href="../ide.html">Текстові Редактори</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1 id="main-title">IntelliJ</h1>
+        <a id="learn-more" href="https://www.jetbrains.com/ru-ru/idea/">Офіційний Сайт</a>
+        <p id="description">
+            IntelliJ IDEA — комерційне інтегроване середовище розробки для різних мов програмування (Java, Python, Scala, PHP та ін.) від компанії JetBrains. Система поставляється у вигляді урізаної по функціональності безкоштовної версії «Community Edition» і повнофункціональної комерційної версії «Ultimate Edition», для якої активні розробники відкритих проектів мають можливість отримати безкоштовну ліцензію. Програмний код Community-версії поширюються рамках ліцензії Apache 2.0. Бінарні збірки підготовлені для Linux, Mac OS X і Windows.
+        </p>
+    </div>
+
+    <script src="../../components/scripts/Header.js"></script>
+</body>
+</html>

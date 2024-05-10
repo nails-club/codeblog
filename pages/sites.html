@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/Header.css">
+    <link rel="stylesheet" href="../css/page.css">
+
+    <link rel="icon" type="image/x-icon" href="../components/svg/cards/sitemap.svg">
+    <title>CodeBlog - Розробка сайтів</title>
+</head>
+<body>
+    <div class='header'>
+        <div class='title'>
+            <img src="../components/svg/code.svg" class='code-image'></img>
+            <a class='label' href="/">CodeBlog</a>
+        </div>
+            
+        <button class='mobile-nav-button' onclick="toggleMobileHeader()">
+            <img src="../components/svg/menu.svg" class='menu-image'></img>
+        </button>
+
+        <ul class='nav'>
+            <li><a href="/index.html">Домашня сторінка</a></li>
+            <li><a href="/index.html">Про сайт</a></li>
+            <li><a href="/login.html">Вхід</a></li>
+            <li><a href="/register.html">Реєстрація</a></li>
+            <li><a href="/profile.html">Профіль</a></li>
+        </ul>
+
+        <ul id='mobile-nav' class='mobile-nav-closed'>
+            <li><a href="/index.html">Домашня сторінка</a></li>
+            <li><a href="/index.html">Про сайт</a></li>
+            <li><a href="/login.html">Вхід</a></li>
+            <li><a href="/register.html">Реєстрація</a></li>
+            <li><a href="/profile.html">Профіль</a></li>
+        </ul>
+    </div>
+
+    <div class="cards-container">
+        <div class="card" id="card-1">
+            <h1>JavaScript</h1>
+            <div class="card-img">
+                <img src="../components/svg/pages/js.svg">
+            </div>
+            <button onclick="location.href='./sites/js.html'">Детальніше</button>
+        </div>
+        <div class="card" id="card-2">
+            <h1>TypeScript</h1>
+            <div class="card-img">
+              <img src="../components/svg/pages/ts.svg">
+            </div>
+            <button onclick="location.href='./sites/ts.html'">Детальніше</button>
+        </div>
+        <div class="card" id="card-3">
+            <h1>PHP</h1>
+            <div class="card-img">
+              <img src="../components/svg/pages/php.svg">
+            </div>
+            <button onclick="location.href='./sites/php.html'">Детальніше</button>
+        </div>
+        <div class="card" id="card-4">
+            <h1>React</h1>
+            <div class="card-img">
+              <img src="../components/svg/pages/react.svg">
+            </div>
+            <button onclick="location.href='./sites/react.html'">Детальніше</button>
+        </div>
+    </div>
+
+
+    <div class="cards-container">
+        <div class="card" id="card-1">
+          <h1>Angular</h1>
+          <div class="card-img">
+            <img src="../components/svg/pages/angular.svg">
+          </div>
+          <button onclick="location.href='./sites/angular.html'">Детальніше</button>
+        </div>
+        <div class="card" id="card-2">
+            <h1>VUE</h1>
+            <div class="card-img">
+              <img src="../components/svg/pages/vue.svg">
+            </div>
+            <button onclick="location.href='./sites/vue.html'">Детальніше</button>
+        </div>
+        <div class="card" id="card-3">
+            <h1>Svelte</h1>
+            <div class="card-img">
+              <img src="../components/svg/pages/svelte.svg">
+            </div>
+            <button onclick="location.href='./sites/svelte.html'">Детальніше</button>
+        </div>
+        <div class="card" id="card-4">
+            <h1>Django</h1>
+            <div class="card-img">
+              <img src="../components/svg/pages/django.svg">
+            </div>
+            <button onclick="location.href='./sites/django.html'">Детальніше</button>
+        </div>
+    </div>
+
+
+    <script src="../components/scripts/Header.js"></script>
+</body>
+</html>

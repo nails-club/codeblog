@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../../css/Header.css">
+    <link rel="stylesheet" href="../../css/general-style.css">
+
+    <link rel="icon" type="image/x-icon" href="../../components/svg/pages/kotlin.svg">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeBlog - Kotlin</title>
+</head>
+<body>
+    <div class='header'>
+        <div class='title'>
+            <img src="../../components/svg/code.svg" class='code-image'></img>
+            <a class='label' href="/">CodeBlog</a>
+        </div>
+            
+        <button class='mobile-nav-button' onclick="toggleMobileHeader()">
+            <img src="../../components/svg/menu.svg" class='menu-image'></img>
+        </button>
+
+        <ul class='nav'>
+            <li><a href="/index.html">Домашня сторінка</a></li>
+            <li><a href="/index.html">Про сайт</a></li>
+            <li><a href="/login.html">Вхід</a></li>
+            <li><a href="/register.html">Реєстрація</a></li>
+            <li><a href="/profile.html">Профіль</a></li>
+            <li><a href="../pz.html">Розробка ПЗ</a></li>
+        </ul>
+
+        <ul id='mobile-nav' class='mobile-nav-closed'>
+            <li><a href="/index.html">Домашня сторінка</a></li>
+            <li><a href="/index.html">Про сайт</a></li>
+            <li><a href="/login.html">Вхід</a></li>
+            <li><a href="/register.html">Реєстрація</a></li>
+            <li><a href="/profile.html">Профіль</a></li>
+            <li><a href="../pz.html">Розробка ПЗ</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1 id="main-title">Kotlin</h1>
+        <a id="learn-more" href="https://kotlinlang.org/">Офіційний Сайт</a>
+        <p id="description">
+            Kotlin (Ко́тлін) — статично типізована мова програмування, що працює поверх JVM і розробляється компанією JetBrains. Також компілюється в JavaScript. Мову названо на честь острова Котлін у Фінській затоці, на якому розміщена частина Кронштадту.
+
+Автори ставили перед собою ціль створити лаконічнішу та типо-безпечнішу мову, ніж Java, і простішу, ніж Scala[2]. Наслідками спрощення, порівняно з Scala стали також швидша компіляція та краща підтримка IDE
+        </p>
+    </div>
+
+    <script src="../../components/scripts/Header.js"></script>
+</body>
+</html>

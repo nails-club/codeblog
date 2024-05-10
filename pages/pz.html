@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/Header.css">
+    <link rel="stylesheet" href="../css/page.css">
+
+    <link rel="icon" type="image/x-icon" href="../components/svg/cards/devices.svg">
+    <title>CodeBlog - Розробка ПЗ</title>
+</head>
+<body>
+    <div class='header'>
+        <div class='title'>
+            <img src="../components/svg/code.svg" class='code-image'></img>
+            <a class='label' href="/">CodeBlog</a>
+        </div>
+            
+        <button class='mobile-nav-button' onclick="toggleMobileHeader()">
+            <img src="../components/svg/menu.svg" class='menu-image'></img>
+        </button>
+
+        <ul class='nav'>
+          <li><a href="/index.html">Домашня сторінка</a></li>
+          <li><a href="/index.html">Про сайт</a></li>
+          <li><a href="/login.html">Вхід</a></li>
+          <li><a href="/register.html">Реєстрація</a></li>
+          <li><a href="/profile.html">Профіль</a></li>
+        </ul>
+
+        <ul id='mobile-nav' class='mobile-nav-closed'>
+          <li><a href="/index.html">Домашня сторінка</a></li>
+          <li><a href="/index.html">Про сайт</a></li>
+          <li><a href="/login.html">Вхід</a></li>
+          <li><a href="/register.html">Реєстрація</a></li>
+          <li><a href="/profile.html">Профіль</a></li>
+        </ul>
+    </div>
+
+    <div class="cards-container">
+        <div class="card" id="card-1">
+          <h1>C#</h1>
+          <div class="card-img">
+            <img src="../components/svg/pages/cs.svg">
+          </div>
+          <button onclick="location.href='./pz/cs.html'">Детальніше</button>
+        </div>
+
+        <div class="card" id="card-2">
+          <h1>C++</h1>
+          <div class="card-img">
+            <img src="../components/svg/pages/cpp.svg">
+          </div>
+          <button onclick="location.href='./pz/cpp.html'">Детальніше</button>
+        </div>
+
+        <div class="card" id="card-3">
+          <h1>Java</h1>
+          <div class="card-img">
+            <img src="../components/svg/pages/java.svg">
+          </div>
+          <button onclick="location.href='./pz/java.html'">Детальніше</button>
+        </div>
+
+        <div class="card" id="card-4">
+          <h1>Python</h1>
+          <div class="card-img">
+            <img src="../components/svg/pages/python.svg">
+          </div>
+          <button onclick="location.href='./pz/python.html'">Детальніше</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="cards-container">
+      <div class="card" id="card-5">
+        <h1>Kotlin</h1>
+        <div class="card-img">
+          <img src="../components/svg/pages/kotlin.svg">
+        </div>
+        <button onclick="location.href='./pz/kotlin.html'">Детальніше</button>
+      </div>
+
+      <div class="card" id="card-6">
+        <h1>GO</h1>
+        <div class="card-img">
+          <img src="../components/svg/pages/go.svg">
+        </div>
+        <button onclick="location.href='./pz/go.html'">Детальніше</button>
+      </div>
+
+      <div class="card" id="card-7">
+        <h1>Rust</h1>
+        <div class="card-img">
+          <img src="../components/svg/pages/rust.svg">
+        </div>
+        <button onclick="location.href='./pz/rust.html'">Детальніше</button>
+      </div>
+
+      <div class="card" id="card-8">
+        <h1>Objective C</h1>
+        <div class="card-img">
+          <img src="../components/svg/pages/obj_c.svg">
+        </div>
+        <button onclick="location.href='./pz/obj_c.html'">Детальніше</button>
+      </div>
+    </div>
+
+    <script src="../components/scripts/Header.js"></script>
+</body>
+</html>

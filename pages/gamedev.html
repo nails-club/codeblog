@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/Header.css">
+    <link rel="stylesheet" href="../css/page.css">
+
+    <link rel="icon" type="image/x-icon" href="../components/svg/pages/unity.svg">
+    <title>CodeBlog - GameDev</title>
+</head>
+<body>
+    <div class='header'>
+        <div class='title'>
+            <img src="../components/svg/code.svg" class='code-image'></img>
+            <a class='label' href="/">CodeBlog</a>
+        </div>
+            
+        <button class='mobile-nav-button' onclick="toggleMobileHeader()">
+            <img src="../components/svg/menu.svg" class='menu-image'></img>
+        </button>
+
+        <ul class='nav'>
+          <li><a href="/index.html">Домашня сторінка</a></li>
+          <li><a href="/index.html">Про сайт</a></li>
+          <li><a href="/login.html">Вхід</a></li>
+          <li><a href="/register.html">Реєстрація</a></li>
+          <li><a href="/profile.html">Профіль</a></li>
+        </ul>
+
+        <ul id='mobile-nav' class='mobile-nav-closed'>
+          <li><a href="/index.html">Домашня сторінка</a></li>
+          <li><a href="/index.html">Про сайт</a></li>
+          <li><a href="/login.html">Вхід</a></li>
+          <li><a href="/register.html">Реєстрація</a></li>
+          <li><a href="/profile.html">Профіль</a></li>
+        </ul>
+    </div>
+
+    <div class="cards-container">
+        <div class="card" id="card-1">
+          <h1>Unity</h1>
+          <div class="card-img">
+            <img src="../components/svg/pages/unity.svg">
+          </div>
+          <button onclick="location.href='./gamedev/unity.html'">Детальніше</button>
+        </div>
+
+        <div class="card" id="card-2">
+          <h1>Unreal Engine</h1>
+          <div class="card-img">
+            <img src="../components/svg/pages/unreal-engine.svg">
+          </div>
+          <button onclick="location.href='./gamedev/unrealengine.html'">Детальніше</button>
+        </div>
+
+        <div class="card" id="card-3">
+          <h1>Godot Engine</h1>
+          <div class="card-img">
+            <img src="../components/svg/pages/godot.svg">
+          </div>
+          <button onclick="location.href='./gamedev/godot.html'">Детальніше</button>
+        </div>
+
+        <div class="card" id="card-4">
+          <h1>CryEngine</h1>
+          <div class="card-img">
+            <img src="../components/svg/pages/cryengine.svg">
+          </div>
+          <button onclick="location.href='./gamedev/cryengine.html'">Детальніше</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="cards-container">
+      <div class="card" id="card-5">
+        <h1>Lumberyard</h1>
+        <div class="card-img">
+          <img src="../components/svg/pages/lumberyard.svg">
+        </div>
+        <button onclick="location.href='./gamedev/lumber.html'">Детальніше</button>
+      </div>
+
+      <div class="card" id="card-6">
+        <h1>GameMaker</h1>
+        <div class="card-img">
+          <img src="../components/svg/pages/gamemaker.svg">
+        </div>
+        <button onclick="location.href='./gamedev/gamemaker.html'">Детальніше</button>
+      </div>
+
+      <div class="card" id="card-7">
+        <h1>Cocos2D</h1>
+        <div class="card-img">
+          <img src="../components/svg/pages/cocos.svg">
+        </div>
+        <button onclick="location.href='./gamedev/cocos.html'">Детальніше</button>
+      </div>
+
+      <div class="card" id="card-8">
+        <h1>Roblox Studio</h1>
+        <div class="card-img">
+          <img src="../components/svg/pages/rbstudio.svg">
+        </div>
+        <button onclick="location.href='./gamedev/rbstudio.html'">Детальніше</button>
+      </div>
+    </div>
+  </div>
+
+    <script src="../components/scripts/Header.js"></script>
+</body>
+</html>

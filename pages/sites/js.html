@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../../css/Header.css">
+    <link rel="stylesheet" href="../../css/general-style.css">
+
+    <link rel="icon" type="image/x-icon" href="../../components/svg/pages/js.svg">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeBlog - JavaScript</title>
+</head>
+<body>
+    <div class='header'>
+        <div class='title'>
+            <img src="../../components/svg/code.svg" class='code-image'></img>
+            <a class='label' href="/">CodeBlog</a>
+        </div>
+            
+        <button class='mobile-nav-button' onclick="toggleMobileHeader()">
+            <img src="../../components/svg/menu.svg" class='menu-image'></img>
+        </button>
+
+        <ul class='nav'>
+            <li><a href="/index.html">Домашня сторінка</a></li>
+            <li><a href="/index.html">Про сайт</a></li>
+            <li><a href="/login.html">Вхід</a></li>
+            <li><a href="/register.html">Реєстрація</a></li>
+            <li><a href="/profile.html">Профіль</a></li>
+            <li><a href="../sites.html">Розробка сайтів</a></li>
+        </ul>
+
+        <ul id='mobile-nav' class='mobile-nav-closed'>
+            <li><a href="/index.html">Домашня сторінка</a></li>
+            <li><a href="/index.html">Про сайт</a></li>
+            <li><a href="/login.html">Вхід</a></li>
+            <li><a href="/register.html">Реєстрація</a></li>
+            <li><a href="/profile.html">Профіль</a></li>
+            <li><a href="../sites.html">Розробка сайтів</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1 id="main-title">JavaScript</h1>
+        <a id="learn-more">Офіційний Сайт (На даний момент не існує)</a>
+        <p id="description">
+            JavaScript (JS) — динамічна, об'єктно-орієнтована прототипна мова програмування. Реалізація стандарту ECMAScript. Найчастіше використовується для створення сценаріїв вебсторінок, що надає можливість на боці клієнта (пристрої кінцевого користувача) взаємодіяти з користувачем, керувати браузером, асинхронно обмінюватися даними з сервером, змінювати структуру та зовнішній вигляд вебсторінки.
+
+JavaScript класифікують як прототипну (підмножина об'єктно-орієнтованої), скриптову мову програмування з динамічною типізацією. Окрім прототипної, JavaScript також частково підтримує інші парадигми програмування (імперативну та частково функціональну) і деякі відповідні архітектурні властивості, зокрема: динамічна та слабка типізація, автоматичне керування пам'яттю, прототипне наслідування, функції як об'єкти першого класу.
+        </p>
+    </div>
+
+    <script src="../../components/scripts/Header.js"></script>
+</body>
+</html>

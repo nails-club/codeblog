@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="css/Normalize.css">
+    <link rel="stylesheet" href="css/Header.css">
+    <link rel="stylesheet" href="css/Form.css">
+
+    <link rel="icon" type="image/x-icon" href="/components/svg/code.svg">
+
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+    <title>CodeBlog - Реєстрація</title>
+  </head>
+
+  <body>
+    <div class='header'>
+        <div class='title'>
+            <img src="components/svg/code.svg" class='code-image'></img>
+            <a class='label' href="/index.html">CodeBlog</a>
+        </div>
+            
+        <button class='mobile-nav-button' onclick="toggleMobileHeader()">
+            <img src="components/svg/menu.svg" class='menu-image'></img>
+        </button>
+
+        <ul class='nav'>
+            <li><a href="/index.html">Домашня сторінка</a></li>
+            <li><a href="/index.html">Про сайт</a></li>
+            <li><a href="/login.html">Вхід</a></li>
+            <li><a href="/profile.html">Профіль</a></li>
+        </ul>
+
+        <ul id='mobile-nav' class='mobile-nav-closed'>
+            <li><a href="/index.html">Домашня сторінка</a></li>
+            <li><a href="/index.html">Про сайт</a></li>
+            <li><a href="/login.html">Вхід</a></li>
+            <li><a href="/profile.html">Профіль</a></li>
+        </ul>
+    </div>
+
+    <div id="login-form">
+        <h1 id="form-title">Реєстрація</h1>
+        <div id="box">
+            <div id="email-field">
+                <label class="input-label" for="email-input">Пошта</label>
+                <input id="email-input" name="email" autocomplete="email">
+            </div>
+            <div id="password-field">
+                <label class="input-label" for="password-input">Пароль</label>
+                <input id="password-input" type="password" name="password">
+            </div>
+            <div id="additions">
+                <button onclick="location.href='./login.html'" id="login-redirect">
+                    Вже є аккаунт?
+                </button>
+            </div>
+            <button id="submit-button" onclick="location.href='/'">Готово</button>
+        </div>
+    </div>
+
+    <script src="components/scripts/Header.js"></script>
+  </body>
+</html>

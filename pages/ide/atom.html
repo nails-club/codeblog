@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../../css/Header.css">
+    <link rel="stylesheet" href="../../css/general-style.css">
+
+    <link rel="icon" type="image/x-icon" href="../../components/svg/pages/atomide.svg">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeBlog - Atom</title>
+</head>
+<body>
+    <div class='header'>
+        <div class='title'>
+            <img src="../../components/svg/code.svg" class='code-image'></img>
+            <a class='label' href="/">CodeBlog</a>
+        </div>
+            
+        <button class='mobile-nav-button' onclick="toggleMobileHeader()">
+            <img src="../../components/svg/menu.svg" class='menu-image'></img>
+        </button>
+
+        <ul class='nav'>
+            <li><a href="/index.html">Домашня сторінка</a></li>
+            <li><a href="/index.html">Про сайт</a></li>
+            <li><a href="/login.html">Вхід</a></li>
+            <li><a href="/register.html">Реєстрація</a></li>
+            <li><a href="/profile.html">Профіль</a></li>
+            <li><a href="../ide.html">Текстові Редактори</a></li>
+        </ul>
+
+        <ul id='mobile-nav' class='mobile-nav-closed'>
+            <li><a href="/index.html">Домашня сторінка</a></li>
+            <li><a href="/index.html">Про сайт</a></li>
+            <li><a href="/login.html">Вхід</a></li>
+            <li><a href="/register.html">Реєстрація</a></li>
+            <li><a href="/profile.html">Профіль</a></li>
+            <li><a href="../ide.html">Текстові Редактори</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1 id="main-title">Atom</h1>
+        <a id="learn-more" href="https://atom-editor.cc/">Офіційний Сайт</a>
+        <p id="description">
+            Atom — розроблений компанією «GitHub» вільний текстовий редактор і редактор коду, який може використовуватися як самодостатнє рішення, так і у ролі технологічного стека для побудови різних спеціалізованих рішень. Зокрема, на платформі Atom побудовані середовища розробки «Visual Studio Code» від компанії «Microsoft» і «Nuclide» від «Facebook».
+
+            Проєкт був представлений компанією GitHub у лютому 2014 року. Перший стабільний випуск 1.0 побачив світ 25 червня 2015-го. Початковий код проєкту поширюється під ліцензією «MIT».
+            Atom надає засоби кросплатформового редагування коду, включає вбудований пакетний менеджер і інтерфейс навігації файловою системою, надає засоби для одночасної спільної роботи з кодом, має інтелектуальну систему автодоповнення вводу, надає режими сумісності з Vim і Emacs, підтримує API для розробки розширень. Кілька файлів можуть бути відкриті в різних вкладках і одночасно показані з використанням вертикального або горизонтального розбиття панелей. Інтерфейс може налаштовуватися через теми оформлення, підтримуються вкладки, закладки, розумний контекстний пошук коду, схлопування блоків коду, одночасне використання декількох курсорів і областей виділення, наочна позначка змін, автодоповнення та перевірка коду для різних мов (Ruby, Python, SQL, PHP, Perl, Objective-C, C/C++, JavaScript, Java, Go тощо). Для формування статей та документації може бути використана розмітка Markdown.
+        </p>
+    </div>
+
+    <script src="../../components/scripts/Header.js"></script>
+</body>
+</html>

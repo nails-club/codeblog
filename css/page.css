@@ -1,0 +1,140 @@
+* {
+    font-family: "Roboto", serif;
+    line-height: 1.625;
+    font-weight: bold;
+    z-index: 10;
+
+    padding: 0;
+    margin: 0;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --about-site-top-padding: 100%;
+    --about-site-height: 70%;
+    --top-bar-height: 70px;
+
+    --clr-site-content-bg: rgb(10,10,10);
+    --clr-cards-bg: rgb(20,20,20);
+    --clr-cards-border: gray;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    flex-grow: 1;
+    left: 0;
+    position: relative;
+    top: var(--top-bar-height);
+    background-color: var(--clr-site-content-bg);
+    width: 100vw;
+    height: calc(100vh - var(--top-bar-height));
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.card {
+    width: 23em;
+    height: 35em;
+    background-color: var(--clr-cards-bg);
+    border: 2.5px solid var(--clr-cards-border);
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px 10px;
+
+    transition: 0.2s ease-out;
+}
+
+.card h1 {
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    color: orange;
+    user-select: none;
+    padding-top: 15px;
+}
+
+.card-img {
+    width: 100%;
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img img {
+    width: 256px;
+    height: 256px;
+}
+
+.card button {
+    cursor: pointer;
+    background: none;
+    text-align: center;
+    margin-top: 20%;
+    padding: 10px 18px;
+
+    border: 3px solid darkgoldenrod;
+    border-radius: 2px;
+    color: darkorange;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: large;
+
+    width: 55%;
+    height: 10%;
+}
+
+@media (hover : hover) and (pointer : fine) {
+    .card:hover {
+        transform: translateY(-10px);
+        animation: 1s infinite alternate card-glow-anim;
+    }
+}
+
+@media (max-width: 1250px) {
+    .cards-container {
+        display: flex;
+        height: 400%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #card-1 {
+        margin-top: 5%;
+    }
+
+    .card {
+        max-width: 80%;
+        padding: 30px;
+        height: 35em;
+    }
+}
+
+@media (max-width: 370px) {
+    .card h1 {
+        font-size: x-large;
+    }
+}
+
+@keyframes card-glow-anim {
+    from {
+        box-shadow: 0px 0px 0px 0px rgb(40,40,40);
+    }
+
+    to {
+        box-shadow: 0px 0px 40px 10px rgb(40,40,40);
+    }
+}

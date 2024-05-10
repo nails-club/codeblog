@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../../css/Header.css">
+    <link rel="stylesheet" href="../../css/general-style.css">
+
+    <link rel="icon" type="image/x-icon" href="../../components/svg/pages/cocos.svg">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeBlog - Cocos2D</title>
+</head>
+<body>
+    <div class='header'>
+        <div class='title'>
+            <img src="../../components/svg/code.svg" class='code-image'></img>
+            <a class='label' href="/">CodeBlog</a>
+        </div>
+            
+        <button class='mobile-nav-button' onclick="toggleMobileHeader()">
+            <img src="../../components/svg/menu.svg" class='menu-image'></img>
+        </button>
+
+        <ul class='nav'>
+            <li><a href="/index.html">Домашня сторінка</a></li>
+            <li><a href="/index.html">Про сайт</a></li>
+            <li><a href="/login.html">Вхід</a></li>
+            <li><a href="/register.html">Реєстрація</a></li>
+            <li><a href="/profile.html">Профіль</a></li>
+            <li><a href="../gamedev.html">Розробка ігор</a></li>
+        </ul>
+
+        <ul id='mobile-nav' class='mobile-nav-closed'>
+            <li><a href="/index.html">Домашня сторінка</a></li>
+            <li><a href="/index.html">Про сайт</a></li>
+            <li><a href="/login.html">Вхід</a></li>
+            <li><a href="/register.html">Реєстрація</a></li>
+            <li><a href="/profile.html">Профіль</a></li>
+            <li><a href="../gamedev.html">Розробка ігор</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1 id="main-title">Cocos2D</h1>
+        <a id="learn-more" href="https://www.cocos.com/">Офіційний Сайт</a>
+        <p id="description">
+            Cocos2d — крос-платформовий фреймворк, який використовується для розробки інтерактивних додатків та ігор (переважно для мобільних пристроїв). Середовище є відкритим програмним забезпеченням. Cocos2d містить багато розгалужень, таких як Cocos2d-ObjC, Cocos2d-x, Cocos2d-html5 і Cocos2d-XNA. Також в товаристві Cocos2d має декілька незалежних редакторів, призначених для редагування спрайтів, частинок, шрифтів і тайлових карт. Можна також згадати редактори світу: CocosBuilder і CocoStudio.
+            Робота всіх версій Cocos2D основана на використанні спрайтів. Спрайти можна розглядати як прості 2D зображення, але також може бути контейнером для інших спрайтів. В Cocos2D, розміщенні разом спрайти створюють сцену, наприклад, рівень гри або головне меню. Спрайтами можна керувати на основі подій у вихідному коді або як частина анімації. Над спрайтами можна проводити певні дії: переміщувати, повертати, масштабувати, змінювати зображення і так далі.
+        </p>
+    </div>
+
+    <script src="../../components/scripts/Header.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/Header.css">
+    <link rel="stylesheet" href="../css/page.css">
+
+    <link rel="icon" type="image/x-icon" href="../components/svg/pages/vscode.svg">
+    <title>CodeBlog - IDE`s</title>
+</head>
+<body>
+    <div class='header'>
+        <div class='title'>
+            <img src="../components/svg/code.svg" class='code-image'></img>
+            <a class='label' href="/">CodeBlog</a>
+        </div>
+            
+        <button class='mobile-nav-button' onclick="toggleMobileHeader()">
+            <img src="../components/svg/menu.svg" class='menu-image'></img>
+        </button>
+
+        <ul class='nav'>
+          <li><a href="/index.html">Домашня сторінка</a></li>
+          <li><a href="/index.html">Про сайт</a></li>
+          <li><a href="/login.html">Вхід</a></li>
+          <li><a href="/register.html">Реєстрація</a></li>
+          <li><a href="/profile.html">Профіль</a></li>
+        </ul>
+
+        <ul id='mobile-nav' class='mobile-nav-closed'>
+          <li><a href="/index.html">Домашня сторінка</a></li>
+          <li><a href="/index.html">Про сайт</a></li>
+          <li><a href="/login.html">Вхід</a></li>
+          <li><a href="/register.html">Реєстрація</a></li>
+          <li><a href="/profile.html">Профіль</a></li>
+        </ul>
+    </div>
+
+    <div class="cards-container">
+        <div class="card" id="card-1">
+          <h1>VS Code</h1>
+          <div class="card-img">
+            <img src="../components/svg/pages/vscode.svg">
+          </div>
+          <button onclick="location.href='./ide/vscode.html'">Детальніше</button>
+        </div>
+
+        <div class="card" id="card-2">
+          <h1>Atom</h1>
+          <div class="card-img">
+            <img src="../components/svg/pages/atomide.svg">
+          </div>
+          <button onclick="location.href='./ide/atom.html'">Детальніше</button>
+        </div>
+
+        <div class="card" id="card-3">
+          <h1>Sublime Text</h1>
+          <div class="card-img">
+            <img src="../components/svg/pages/sublime-text-icon.svg">
+          </div>
+          <button onclick="location.href='./ide/sublimetext.html'">Детальніше</button>
+        </div>
+
+        <div class="card" id="card-4">
+          <h1>Komodo IDE</h1>
+          <div class="card-img">
+            <img src="../components/svg/pages/komodo.svg">
+          </div>
+          <button onclick="location.href='./ide/komodo.html'">Детальніше</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="cards-container">
+      <div class="card" id="card-5">
+        <h1>Visual Studio</h1>
+        <div class="card-img">
+          <img src="../components/svg/pages/visualstudio.svg">
+        </div>
+        <button onclick="location.href='./ide/visualstudio.html'">Детальніше</button>
+      </div>
+
+      <div class="card" id="card-6">
+        <h1>Eclipse</h1>
+        <div class="card-img">
+          <img src="../components/svg/pages/EClipse.svg">
+        </div>
+        <button onclick="location.href='./ide/eclipse.html'">Детальніше</button>
+      </div>
+
+      <div class="card" id="card-7">
+        <h1>PyCharm</h1>
+        <div class="card-img">
+          <img src="../components/svg/pages/pycharm.svg">
+        </div>
+        <button onclick="location.href='./ide/pycharm.html'">Детальніше</button>
+      </div>
+
+      <div class="card" id="card-8">
+        <h1>IntelliJ</h1>
+        <div class="card-img">
+          <img src="../components/svg/pages/intellij-idea.svg">
+        </div>
+        <button onclick="location.href='./ide/intellij-idea.html'">Детальніше</button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="cards-container">
+    <div class="card" id="card-9">
+      <h1>NetBeans</h1>
+      <div class="card-img">
+        <img src="../components/svg/pages/netbeans.svg">
+      </div>
+      <button onclick="location.href='./ide/netbeans.html'">Детальніше</button>
+    </div>
+
+    <div class="card" id="card-10">
+      <h1>XCode</h1>
+      <div class="card-img">
+        <img src="../components/svg/pages/xcode.svg">
+      </div>
+      <button onclick="location.href='./ide/xcode.html'">Детальніше</button>
+    </div>
+
+    <div class="card" id="card-11">
+      <h1>RStudio</h1>
+      <div class="card-img">
+        <img src="../components/svg/pages/rstudio.svg">
+      </div>
+      <button onclick="location.href='./ide/rstudio.html'">Детальніше</button>
+    </div>
+
+    <div class="card" id="card-12">
+      <h1>Vim</h1>
+      <div class="card-img">
+        <img src="../components/svg/pages/vim.svg">
+      </div>
+      <button onclick="location.href='./ide/vim.html'">Детальніше</button>
+    </div>
+  </div>
+
+  <script src="../components/scripts/Header.js"></script>
+</body>
+</html>

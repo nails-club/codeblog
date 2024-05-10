@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="css/Normalize.css">
+    <link rel="stylesheet" href="css/Header.css">
+    <link rel="stylesheet" href="css/Form.css">
+
+    <link rel="icon" type="image/x-icon" href="/components/svg/code.svg">
+
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+    <title>CodeBlog - Профіль</title>
+  </head>
+
+  <body>
+    <div class='header'>
+        <div class='title'>
+            <img src="components/svg/code.svg" class='code-image'></img>
+            <a class='label' href="/index.html">CodeBlog</a>
+        </div>
+            
+        <button class='mobile-nav-button' onclick="toggleMobileHeader()">
+            <img src="components/svg/menu.svg" class='menu-image'></img>
+        </button>
+
+        <ul class='nav'>
+            <li><a href="/index.html">Домашня сторінка</a></li>
+            <li><a href="/index.html">Про сайт</a></li>
+            <li><a href="/register.html">Реєстрація</a></li>
+            <li><a href="/login.html">Вхід</a></li>
+        </ul>
+
+        <ul id='mobile-nav' class='mobile-nav-closed'>
+            <li><a href="/index.html">Домашня сторінка</a></li>
+            <li><a href="/index.html">Про сайт</a></li>
+            <li><a href="/register.html">Реєстрація</a></li>
+            <li><a href="/login.html">Вхід</a></li>
+        </ul>
+    </div>
+
+    <div id="login-form">
+        <h1 id="form-title">Профіль</h1>
+        <div id="box">
+            <div id="email-field">
+                <label class="input-label" for="email-input">Дата народження</label>
+                <input id="email-input" name="email" type="date" autocomplete="bday-day">
+            </div>
+            <div id="password-field">
+                <label class="input-label" for="password-input">Місце проживання</label>
+                <input id="password-input" name="password" autocomplete="address-line1">
+            </div>
+            <button id="submit-button" onclick="location.href='/'">Оновити</button>
+        </div>
+    </div>
+
+    <script src="components/scripts/Header.js"></script>
+  </body>
+</html>

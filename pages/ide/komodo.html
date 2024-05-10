@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../../css/Header.css">
+    <link rel="stylesheet" href="../../css/general-style.css">
+
+    <link rel="icon" type="image/x-icon" href="../../components/svg/pages/komodo.svg">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeBlog - Komodo IDE</title>
+</head>
+<body>
+    <div class='header'>
+        <div class='title'>
+            <img src="../../components/svg/code.svg" class='code-image'></img>
+            <a class='label' href="/">CodeBlog</a>
+        </div>
+            
+        <button class='mobile-nav-button' onclick="toggleMobileHeader()">
+            <img src="../../components/svg/menu.svg" class='menu-image'></img>
+        </button>
+
+        <ul class='nav'>
+            <li><a href="/index.html">Домашня сторінка</a></li>
+            <li><a href="/index.html">Про сайт</a></li>
+            <li><a href="/login.html">Вхід</a></li>
+            <li><a href="/register.html">Реєстрація</a></li>
+            <li><a href="/profile.html">Профіль</a></li>
+            <li><a href="../ide.html">Текстові Редактори</a></li>
+        </ul>
+
+        <ul id='mobile-nav' class='mobile-nav-closed'>
+            <li><a href="/index.html">Домашня сторінка</a></li>
+            <li><a href="/index.html">Про сайт</a></li>
+            <li><a href="/login.html">Вхід</a></li>
+            <li><a href="/register.html">Реєстрація</a></li>
+            <li><a href="/profile.html">Профіль</a></li>
+            <li><a href="../ide.html">Текстові Редактори</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1 id="main-title">Komodo IDE</h1>
+        <a id="learn-more" href="https://www.activestate.com/products/komodo-ide/">Офіційний Сайт</a>
+        <p id="description">
+            Komodo — інтегроване середовище розробки від канадської компанії ActiveState. Програма побудована на основі платформи Mozilla Gecko (XUL-інтерпретатор зі складу Firefox 7).
+
+Komodo підтримує мови PHP/Smarty, Python/Zope/Django, Ruby/Rails, Perl/Template Toolkit, Tcl, JavaScript, XML і HTML/CSS; системи контролю версій Mercurial, Git, Bazaar, Subversion, Perforce і CVS. Пакет постачається в двох варіантах: платний Komodo IDE і безплатний Komodo Edit, заснований на репозиторії з відкритим початковим кодом Open Komodo (код доступний під ліцензіями MPL, GPL і LGPL).
+
+У Komodo Edit є засоби автодоповнення та перевірки мовних конструкцій, форматування коду, спливаючі підказки, підсвічування і перевірка синтаксису, режим емуляції клавіатурних комбінацій редакторів Vi і Emacs, можливість розширення через установку Firefox-подібних доповнень, система управління проектами. Одночасна робота з декількома файлами реалізована через інтерфейс на базі вкладок.
+
+З відмінностей Komodo Edit від Komodo IDE можна відзначити: відсутність вбудованого зневаджувача, інтерактивного shell, HTTP-інспектора, режиму перегляду DOM-ієрархії для HTML-документів, режиму деревоподібного відображення структури коду, системи наочної побудови регулярних виразів, інтеграції з системами контролю версій.
+        </p>
+    </div>
+
+    <script src="../../components/scripts/Header.js"></script>
+</body>
+</html>
