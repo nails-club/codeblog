@@ -13,7 +13,7 @@
     <title>CodeBlog - Профіль</title>
   </head>
 
-  <body>
+  <body style="background-color: rgb(10, 10, 10);">
     <div class='header'>
         <div class='title'>
             <img src="components/svg/code.svg" class='code-image'></img>
@@ -39,7 +39,7 @@
         </ul>
     </div>
 
-    <div id="login-form">
+    <!-- <div id="login-form">
         <h1 id="form-title">Профіль</h1>
         <div id="box">
             <div id="email-field">
@@ -52,7 +52,41 @@
             </div>
             <button id="submit-button" onclick="location.href='./index.html'">Оновити</button>
         </div>
-    </div>
+    </div> -->
+    <form style="margin-top: 10%; margin-left: 20%; margin-right: 20%; color: white;">
+        <fieldset>
+        <legend>Профіль</legend>
+        Прізвище:<br>
+        <input type="text" name="firstname"><br>
+        Ім'я:<br>
+        <input type="text" name="lastname" autocomplete="family-name">
+        <br>
+        <input type="radio" name="gender"  checked> Чоловік<br>
+        <input type="radio" name="gender" > Жінка<br>
+        </fieldset>
+        
+        <br>
+        <fieldset>
+        <legend>Про себе</legend>
+         <p>Оберіть сферу IT, яка вам до вподоби, більше за інші</p>
+        <select name="it">
+            <option value="web">Веб</option>
+            <option value="pz">Програмне забезпечення</option>
+            <option value="gamedev">Ігри</option>
+            <option value="else">Інше</option>
+        </select>
+        <br>
+         <p>Як би ви охарактеризували себе?</p>
+         <input type="checkbox" name="1" > Наполегливий(-а)<br>
+        <input type="checkbox" name="2" > Розумний(-а) <br>
+        <input type="checkbox" name="3" > Добрий(-а) <br>
+        <p>Додаткова інформація</p> <br>
+        <textarea> </textarea> <br>
+      
+        </fieldset>
+        
+        
+      </form>
 
     <script src="/components/scripts/Header.js"></script>
   </body>
