@@ -1,114 +1,112 @@
-@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 :root {
-    --about-site-top-padding: 100%;
-    --about-site-height: 85%;
-    --top-bar-height: 70px;
-    --top-bar-border-size: 3px;
+  --about-site-top-padding: 100%;
+  --about-site-height: 85%;
+  --top-bar-height: 70px;
+  --top-bar-border-size: 3px;
 
-    --clr-top-bar-border: rgb(10,10,10);
-    --clr-site-content-bg: rgb(10,10,10);
+  --clr-top-bar-border: rgb(10, 10, 10);
+  --clr-site-content-bg: rgb(10, 10, 10);
 }
 
 * {
-    font-family: "Roboto", serif;
-    line-height: 1.625;
-    font-weight: bold;
-    z-index: 10;
+  font-family: "Roboto", serif;
+  line-height: 1.625;
+  font-weight: bold;
+  z-index: 10;
 
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 *::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 body {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    overflow-x: hidden;
-    overflow-y: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
 
-    width: 100%;
-    height: 100%;
-    padding-right: 17px;
-    box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding-right: 17px;
+  box-sizing: border-box;
 
-    background-image: url("/components/images/site-bg-image-main.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+  background-image: url("../components/images/site-bg-image-main.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .content #h1-welcome-title {
-    position: absolute;
-    width: 100%;
-    height: 60%;
-    top: calc(var(--top-bar-height) + 30%);
-    text-align: center;
-    text-decoration: none;
-    font-weight: 850;
-    user-select: none;
-    -webkit-text-stroke: 3px black;
-    color: darkorange;
-    font-size: 400%;
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  top: calc(var(--top-bar-height) + 30%);
+  text-align: center;
+  text-decoration: none;
+  font-weight: 850;
+  user-select: none;
+  -webkit-text-stroke: 3px black;
+  color: darkorange;
+  font-size: 400%;
 }
 
 .welcome-screen {
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    height: var(--about-site-height);
-    text-align: center;
-    top: var(--about-site-top-padding);
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    background-color: var(--clr-site-content-bg);
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    box-shadow:
-        0px -30px 2px var(--clr-site-content-bg),
-        0px -40px 2px rgb(12,12,12),
-        0px -50px 2px rgb(14,14,14),
-        0px -60px 2px rgb(16,16,16);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  height: var(--about-site-height);
+  text-align: center;
+  top: var(--about-site-top-padding);
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: var(--clr-site-content-bg);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0px -30px 2px var(--clr-site-content-bg),
+    0px -40px 2px rgb(12, 12, 12), 0px -50px 2px rgb(14, 14, 14),
+    0px -60px 2px rgb(16, 16, 16);
 }
 
 .about-site {
-    color: wheat;
-    font-weight: 700;
-    font-size: xx-large;
-    width: 90%;
-    height: 80%;
-    overflow: hidden;
+  color: wheat;
+  font-weight: 700;
+  font-size: xx-large;
+  width: 90%;
+  height: 80%;
+  overflow: hidden;
 }
 
 #about-side-title {
-    color: orange;
+  color: orange;
 }
 
 @media (max-width: 1050px) {
-    .about-site {
-        font-size: x-large;
-    }
+  .about-site {
+    font-size: x-large;
+  }
 }
 
 @media (max-width: 700px) {
-    * {
-        overflow-x: hidden;
-    }
+  * {
+    overflow-x: hidden;
+  }
 
-    .content #h1-welcome-title {
-        font-size: 250%;
-        -webkit-text-stroke: 1.5px black;
-    }
+  .content #h1-welcome-title {
+    font-size: 250%;
+    -webkit-text-stroke: 1.5px black;
+  }
 }
 
 @media (max-width: 400px) {
-    .about-site {
-        height: 100%;
-    }
+  .about-site {
+    height: 100%;
+  }
 }
